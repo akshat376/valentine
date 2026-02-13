@@ -16,16 +16,6 @@ navLinks.forEach(link => {
     });
 });
 
-function getRandomColor() {
-    const colors = [
-        'var(--hot-pink)',
-        'var(--sad-blue)',
-        'var(--ramen-orange)',
-        'var(--broke-green)'
-    ];
-
-    return colors[Math.floor(Math.random() * colors.length)];
-}
 
 const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
@@ -72,6 +62,5 @@ noBtn.addEventListener('mouseenter', function () {
     noBtn.style.left = randomX + 'px';
     noBtn.style.top = randomY + 'px';
 
-    // Single hover message
     proposalMessage.textContent = "You can't catch me! 🏃‍♂️💨";
 });
